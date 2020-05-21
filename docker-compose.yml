@@ -1,8 +1,8 @@
-version: '2.1'
+version: '3'
 
 services:
   angular-nginx-docker:
-    image: angular-nginx-docker
+    image: 172.31.44.24:8083/angular-nginx-docker:latest
     build: .
     environment:
       NODE_ENV: production
