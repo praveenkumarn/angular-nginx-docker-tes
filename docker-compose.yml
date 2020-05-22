@@ -3,14 +3,13 @@ version: '3'
 services:
   angular-nginx-docker:
     image: 172.31.44.24:8083/angular-nginx-docker:latest_${JOBNAME}-${BUILDNUM}
-    build: .
     environment:
       NODE_ENV: production
     ports:
       - 4380:80
     networks:
       - overlay
-      
+
 networks:
   overlay:
     external:
