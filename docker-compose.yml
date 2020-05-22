@@ -6,10 +6,10 @@ services:
     build: .
     environment:
       NODE_ENV: production
-    networks:
-      - overlay
     ports:
       - 4380:80
+    networks:
+      - overlay
       
 networks:
   overlay:
