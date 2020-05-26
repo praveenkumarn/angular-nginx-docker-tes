@@ -7,7 +7,7 @@ services:
     environment:
       NODE_ENV: production
     ports:
-      - "4480:80"
+      - 4480:80
     networks:
       - overlay
 
